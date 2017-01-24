@@ -1,17 +1,19 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.3.0
+  - 2.3.1
 before_script:
-- bundle exec rails db:create --all
-- bundle exec rails db:migrate
-services:
-- postgresql
-deploy:
-  provider: heroku
-  app:
-    develop: robot-man-api
-  on:
-    repo: kriizjones/robot_man_challenge
-  run:
+  - bundle exec rails db:create --all
   - bundle exec rails db:migrate
+services:
+  - postgresql
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure:
+#   app:
+#     develop:
+#   on:
+#     repo:
+#   run:
+#     - bundle exec rake db:migrate
