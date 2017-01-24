@@ -5,3 +5,15 @@ rvm:
 before_script:
 - bundle exec rails db:create --all
 - bundle exec rails db:migrate
+services:
+- postgresql
+deploy:
+  provider: heroku
+  api_key:
+    secure: rWKrxNFg0IVFfqWo5jNMmkVsAPLnoB6/cfuD+bEXdLjO2F+ymnnExsByOCP+yiDfTt8pte8gfPDrAJ//8XZq8qG/djJOmCQwIFwaTsn4doOvu7xJGHsat7AY5r/EHRum4ITqi2eMoDoOy2IsfB3RL1ZAWLsSeWwZmAUhNtuav4l455z9FqHplz4B82tTOlQWgnxPV1IR22BRrDWV57ux0mezU4Ob8nBpfMTTUzpCsxAyJfTmLA5sloMOd+ffCYn3C9XzAt1MQEytTmOw6ExW0kAQv6j3PLfCHU2yvmYOCRlpf+oMBwUFehgHnbNqHvpwEWtkmq9JzStgy5YfwIMtqoZm7m0N1tSJ1TrkPchs2nOrWGRUPLtL/b5GKzbQg45vFgjGrJwr5NiOahlzl50JhZelGEyiy9dTNb75xuaGkTdn7mgnJjxkhaOKTEgAh8zs/vfWOSl0Zg2VLdLgx3Kf8AWNW7YQcu48zrjA9g3U2SE4Ht33MLVZUikN+LND1Y9VhYx4nCHFfPmf16Yk6twm+x2melvi8VNm2pZmokbROvmwfcFIOfnsJ8OAwUE6/qk98isg1BT61LdMTSdvhY7ASau9MpYpr5vn/hokzFkwQtxu/SeMyt4qLvYXdjUMFHL0+xL82ZjCXLfFbDoGArbT9rJWjfDvR8X0zVpLi9np4QI=
+  app:
+    develop: robot-man-api
+  on:
+    repo: kriizjones/robot_man_challenge
+  run:
+  - bundle exec rails db:migrate
