@@ -1,6 +1,23 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/luciademoja/Kristoffer/projects/robot_man/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/luciademoja/Kristoffer/projects/robot_man/app/models/owner.rb": [
+        1,
+        null
+      ],
+      "/Users/luciademoja/Kristoffer/projects/robot_man/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/luciademoja/Kristoffer/projects/robot_man/app/models/robot.rb": [
+        1,
+        null
+      ],
       "/Users/luciademoja/Kristoffer/projects/robot_man/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -18,10 +35,6 @@
         0,
         0
       ],
-      "/Users/luciademoja/Kristoffer/projects/robot_man/app/helpers/application_helper.rb": [
-        0,
-        0
-      ],
       "/Users/luciademoja/Kristoffer/projects/robot_man/app/jobs/application_job.rb": [
         0,
         0
@@ -31,13 +44,8 @@
         0,
         0,
         0
-      ],
-      "/Users/luciademoja/Kristoffer/projects/robot_man/app/models/application_record.rb": [
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1485252525
+    "timestamp": 1485264796
   }
 }
